@@ -3,9 +3,5 @@
   "verbose": true,
   "ignore": [".git", "node_modules/"],
   "watch": ["src/app.ts"],
-  "env": {
-    "NODE_ENV": "development"
-  },
-  "ext": "ts",
   "exec": "npm run start"
 }

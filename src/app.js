@@ -1,9 +1,7 @@
+console.log('hello');
 // import { createServer, IncomingMessage, ServerResponse } from 'http';
-import getController from './controllers/getController';
-
-const port = 4000;
-console.log(getController);
-
+// import getController from './controllers/getController';
+// const port = 4000;
 // const server = createServer(
 //   (request: IncomingMessage, response: ServerResponse) => {
 //     switch (request.method) {

@@ -2,11 +2,11 @@
   "name": "ts_stydy",
   "version": "1.0.0",
   "description": "",
-  "main": "app.bundle.js",
-  "type": "module",
+  "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "dev": "nodemon",
-    "start": "ts-node src/app.ts",
+    "dev": "nodemon src/app.ts",
+    "start": "ts-node-esm src/app.ts",
     "start:bundle": "node dist/app.bundle.js",
     "tsc": "tsc src/app.ts",
     "build": "webpack",
@@ -18,7 +18,6 @@
   "devDependencies": {
     "@types/node": "^18.11.17",
     "@types/webpack": "^5.28.0",
-    "@types/webpack-dev-server": "^4.7.2",
     "nodemon": "^2.0.20",
     "ts-loader": "^9.4.2",
     "ts-node": "^10.9.1",
