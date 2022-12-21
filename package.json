@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.bundle.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon",
     "start": "ts-node src/app.ts",
