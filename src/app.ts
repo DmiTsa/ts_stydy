@@ -31,12 +31,3 @@ const server = createServer(
     //  }
   }
 );
-
-server.listen(port, () => {
-  console.log(`Server running at port: ${port}`);
-});
-
-//functions
-// const postController = (a, b) => {};
-// const putController = (a, b) => {};
-// const deleteController = (a, b) => {};
