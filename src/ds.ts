@@ -1,17 +1,18 @@
+import User from './interfaces/User';
 //functions
-type User = {
-  id?: string;
-  username: string;
-  age: number;
-  hobbies: string[];
-};
+// type User = {
+//   id?: string;
+//   username?: string;
+//   age?: number;
+//   hobbies?: string[];
+// };
 
 function userValidator(body: User) {
-  body.id = 'ss';
-  return body;
+  return body.username && body.age && body.hobbies ? true : false;
 }
 
-const User1 = { username: 'pasha', age: 29, hobbies: ['jhobby'] };
+const User1 = { username: 'pasha', age: 29, hobbies: [] };
+
 const res = userValidator(User1);
 console.log(res);
 

@@ -6,7 +6,7 @@ const getController = (req: IncomingMessage, res: ServerResponse) => {
     case `/api/users`:
       res.statusCode = 200;
       res.setHeader('Content-Type', 'application/json');
-      res.end(users);
+      res.end(JSON.stringify(users));
       break;
     default:
       res.statusCode = 404;
