@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "nodemon src/app.ts",
     "start": "ts-node-esm src/app.ts",
+    "start:ds": "ts-node-esm src/ds.ts",
     "start:bundle": "node dist/app.bundle.js",
     "tsc": "tsc src/app.ts",
     "build": "webpack",

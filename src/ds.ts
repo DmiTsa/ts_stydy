@@ -1,3 +1,20 @@
+//functions
+type User = {
+  id?: string;
+  username: string;
+  age: number;
+  hobbies: string[];
+};
+
+function userValidator(body: User) {
+  body.id = 'ss';
+  return body;
+}
+
+const User1 = { username: 'pasha', age: 29, hobbies: ['jhobby'] };
+const res = userValidator(User1);
+console.log(res);
+
 //function mathOp(x: number, y: number, op: (a: number, b: number) => number): number{
 
 // import { v4 as uuidv4 } from 'uuid';
